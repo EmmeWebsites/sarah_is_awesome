@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sarah is awesome!!</title>
+    <!-- Recommended meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="mystylesheet.css" />
+
+
+</head>
+<body>
+
+<div class="bg-image img1">
+
+	
+	<h1><u style="text-decoration-line: underline 10px; text-decoration-color: #434aa7;">Sarah</u> <p >- you're awesome!</p> </h1>
+	<p class="paragraph">Thank you for being a great friend to me. You are always so nice and kind and look after me, I appreciate it so much. You are such a kind person. I am blessed so much to have a friend like you! <img src="images/heart.png" style="height:260px; width: 200px; float:right;"></p>
+
+</div>
+
+
+<div class="bg-image img2">
+
+	<h2>Thank you for always being there for me. </h2>
+
+	<div class="slideshow-container">
+
+		<div class="mySlides">
+		  <img src="images/image1.png">
+		</div>
+
+		<div class="mySlides">
+		  <img src="images/image2.png">
+		</div>
+
+		<div class="mySlides">
+		  <img src="images/image3.png">
+		</div>
+
+		<div class="mySlides">
+		  <img src="images/image4.png">
+		</div>
+		
+	</div>
+	
+<div>
+
+
+	<!--Script for changing the slides in the slideshow. -->
+	<script>
+	let slideIndex = 0;
+	showSlides();
+
+	function showSlides() { // Function to change through slides 
+	  let index;
+	  let slides = document.getElementsByClassName("mySlides");
+	  for (index = 0; index < slides.length; index++) {
+		slides[index].style.display = "none";  // Current picture dissappears
+	  }
+	  slideIndex++;
+	  if (slideIndex > slides.length) {slideIndex = 1} 
+
+	  slides[slideIndex-1].style.display = "block";   // Shows next picture 
+
+	  setTimeout(showSlides, 3000); // Change image every 3 seconds
+	}
+	
+	
+	
+	
+
+	</script>
+	
+</body>
+</html>
